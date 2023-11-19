@@ -1,0 +1,29 @@
+body,
+html {
+  height: 80%;
+  box-sizing: border-box;
+}
+
+/* We need to define the width of our image. We want each image to fit the full width of the flex item container. 
+   Instead of using pixels, we will use a percentage so the images can adapt to the size of the screen. */
+img {
+  width: 40%;  /* Try changing it to 60% or 10% and see what happens.*/
+}
+
+/* This is the subtitle text under our images. */ 
+.subtitle {
+  text-align: center; /* We want this text to be in the center */
+}
+
+/* Create the flex container */
+.flex-container {
+  display: flex; /* Enable flexbox properties! This property defines the flexbox container */
+  flex-direction: row; /* Set your flex items which direction to go - if it should display left to right in a row or top to bottom in a column */
+  flex-wrap: nowrap; /* Tell your elements to fit all on one line with nowrap or to fit onto more than one line with wrap */
+}
+
+/* Style the flex items */
+.flex-item {
+  flex-basis: 100%; /* Set the width of each item */
+  margin: 1%; /* Put a little bit of space around each flex item */
+}
